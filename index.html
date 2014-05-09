@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html> 
+<html> 
+   <head> 
+      <title>jQuery Mobile - Primeiro Exemplo</title> 
+      <meta charset="utf-8"/>
+      
+      <!--  O viewport é a área onde seu website aparece. 
+            É a área que você se preocupa se o vai ou não caber na hora da criação. 
+            A tag Viweport especifica como o browser deve considerar o nivel de zoom 
+            Se não for usado, muitos browsers usarão uma página "virtual" de 900 pixels
+            para manter a compatibilidade com sites desktop -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+      <!-- Folha de estilos - CSS - do jQuery Mobile -->
+      <link rel="stylesheet" href="jquery.mobile-1.4.1.min.css" /> 
+      <!-- Framework jQuery (Core) -->
+      <script type="text/javascript" src="jquery-1.11.0.min.js"></script> 
+      <!-- Framework jQuery Mobile -->
+      <script type="text/javascript" src="jquery.mobile-1.4.1.min.js"></script> 
+   </head> 
+   <body> 
+      <!-- Define uma página em jQuery Mobile -->
+      <div data-role="page"> 
+         <!-- Indica uma barra de cabeçalho -->
+         <div data-role="header" data-position="fixed"> 
+            <h1>Primeira página com jQuery Mobile</h1> 
+         </div><!-- /header -->
+         
+         <!-- Indica a área principal de conteúdo -->
+         <div role="main" class="ui-content"> 
+            <p>Essa é sua primeira página para dispositivos móveis</p> 
+         </div><!-- /content --> 
+
+         <!-- Indica uma barra de rodapé -->
+         <div data-role="footer" data-position="fixed"> 
+            <p>Disciplina: Programação para Dispositivos Móveis</p> 
+         </div><!-- /footer --> 
+      </div> 
+   </body> <!-- /page -->
+</html>
