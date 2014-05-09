@@ -16,7 +16,24 @@
       <!-- Framework jQuery (Core) -->
       <script type="text/javascript" src="jquery-1.11.0.min.js"></script> 
       <!-- Framework jQuery Mobile -->
-      <script type="text/javascript" src="jquery.mobile-1.4.1.min.js"></script> 
+      <script type="text/javascript" src="jquery.mobile-1.4.1.min.js"></script>
+	 
+	 <!---script js-->
+	  function checkConnection() {
+	  var networkState = navigator.connection.type;
+	  var states = {};
+	  states[Connection.UNKNOWN] = 'Conexão desconhecida';
+	  states[Connection.ETHERNET] = 'Ethernet';
+	  states[Connection.WIFI] = 'WiFi';
+	  states[Connection.CELL_2G] = 'Celular 2G';
+	  states[Connection.CELL_3G] = 'Celular 3G';
+	  states[Connection.CELL_4G] = 'Celular 4G';
+	  states[Connection.CELL] = 'Conexão celular genérica';
+	  states[Connection.NONE] = 'Sem conexão rede';
+	  alert('Tipo de conexão: ' + states[networkState]);
+	  }
+	<!--fim script js-->
+	  
    </head> 
    <body> 
       <!-- Define uma página em jQuery Mobile -->
@@ -29,6 +46,12 @@
          <!-- Indica a área principal de conteúdo -->
          <div role="main" class="ui-content"> 
             <p>Essa é sua primeira página para dispositivos móveis</p> 
+			
+			<div class="ui-body-b">
+                  <fieldset class="ui-grid-a">
+                     <div class="ui-block-b"><button onclick="checkConnection();" data-theme="a">Tipo Conexão</button></div>     
+                  </fieldset>
+               </div>
          </div><!-- /content --> 
 
          <!-- Indica uma barra de rodapé -->
