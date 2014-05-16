@@ -19,6 +19,8 @@
       <script type="text/javascript" src="jquery.mobile-1.4.1.min.js"></script>
 	 
 	 <!---script js-->
+	 <!--tipo de conexão-->
+	  <script type="text/javascript" charset="utf-8">
 	  function checkConnection() {
 		  var networkState = navigator.connection.type;
 		  var states = {};
@@ -32,7 +34,8 @@
 		  states[Connection.NONE] = 'Sem conexão rede';
 		  alert('Tipo de conexão: ' + states[networkState]);
 	  }
-	  
+	  <!--fim tipo de conexão-->
+	  <!----------------------------------------------------->
 	  <!--EXEMPLO GEOLOCATION - getCurrentPosition-->
 	  
 	  // Wait for Cordova to load
@@ -67,7 +70,8 @@
     }
 	  
 	  <!--FIM EXEMPLO getCurrentPosition-->
-	  
+	  <-------------------------------------------------------->
+	  <!--EXEMPLO GEOLOCATION - watchPosition-->
 	  // Wait for Cordova to load
     //
     document.addEventListener("deviceready", onDeviceReady, false);
@@ -97,13 +101,10 @@
         alert('code: '    + error.code    + '\n' +
               'message: ' + error.message + '\n');
     }
-	  
-	  <!--EXEMPLO GEOLOCATION - watchPosition-->
-	  
 	  <!--FIM EXEMPLO watchPosition-->
 	  
 	<!--fim script js-->
-	  
+	 </script> 
    </head> 
    <body> 
       <!-- Define uma página em jQuery Mobile -->
